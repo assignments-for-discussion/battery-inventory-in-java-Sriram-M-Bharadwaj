@@ -9,7 +9,7 @@ public class Main {
 
   static CountsBySoH countBatteriesByHealth(int[] presentCapacities) {
     CountsBySoH counts = new CountsBySoH();
-     CountsBySoH counts = new CountsBySoH();
+    
         int [] stateofHealth = new int[presentCapacities.length];
         for(int i=0;i<presentCapacities.length;i++){
             if(presentCapacities[i]>120 || presentCapacities[i]<0)
