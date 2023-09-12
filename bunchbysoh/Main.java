@@ -12,8 +12,10 @@ public class Main {
     
         int [] stateofHealth = new int[presentCapacities.length];
         for(int i=0;i<presentCapacities.length;i++){
-            if(presentCapacities[i]>120 || presentCapacities[i]<0)
+            if(presentCapacities[i]>120 || presentCapacities[i]<0){
+           System.out.println(presentCapacities[i] + " is an invalid input");
                 continue;
+            }
             stateofHealth[i]= 100* presentCapacities[i]/120;
             if(stateofHealth[i]>=80)
                 counts.healthy++;
